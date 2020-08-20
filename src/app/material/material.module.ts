@@ -32,9 +32,14 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 const material = [
   FlexLayoutModule,
+
+  FormsModule, 
+  ReactiveFormsModule,
+
   MatAutocompleteModule,
   MatBadgeModule,
   MatButtonModule,
