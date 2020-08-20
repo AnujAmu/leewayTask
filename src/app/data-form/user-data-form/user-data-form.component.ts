@@ -10,14 +10,13 @@ import { User } from './user-data-form.model';
 })
 export class UserDataFormComponent implements OnInit {
 
-  submitted = false;
-  dataForm: FormGroup;
-  
+  public submitted = false;
+  public dataForm: FormGroup;
+
   constructor(
     public fb: FormBuilder,
-    // private ngZone: NgZone,
     private _service: UserDataFormService
-  ) { 
+  ) {
     this.mainForm();
   }
 
@@ -35,27 +34,13 @@ export class UserDataFormComponent implements OnInit {
   }
 
   // Getter to access form control
-  get myForm(){
+  get myForm() {
     return this.dataForm.controls;
   }
+
   userModel = new User();
 
-  // onSubmit() {
-  //   this.submitted = true;
-  //   if (!this.dataForm.valid) {
-  //     return false;
-  //   } else {
-  //     this.apiService.pushData(this.dataForm.value).subscribe(
-  //       (res) => {
-  //         console.log('Employee successfully created!')
-  //       }, (error) => {
-  //         console.log(error);
-  //       });
-  //   }
-  // }
-
   onSubmit() {
-
     this._service.create(this.dataForm.value)
       .subscribe(
         response => {
@@ -66,5 +51,4 @@ export class UserDataFormComponent implements OnInit {
           console.log(error);
         });
   }
-
 }

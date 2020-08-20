@@ -1,24 +1,23 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserDataFormModule } from './data-form/modules/user-data-form.module';
+import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material/material.module';
+import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { MaterialModule } from './material/material.module';
+import { NgModule } from '@angular/core';
+import { UserDataFormModule } from './data-form/modules/user-data-form.module';
 
 @NgModule({
   declarations: [
     AppComponent,
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
-    UserDataFormModule,
     BrowserAnimationsModule,
+    BrowserModule,
+    HttpClientModule,
     MaterialModule,
-    HttpClientModule
+    UserDataFormModule
   ],
   providers: [],
   bootstrap: [AppComponent]

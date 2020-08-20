@@ -1,47 +1,40 @@
-<p>user-data-form works!</p>
-
 <div class="login-container" fxLayout="row" fxLayoutAlign="center center">
-    <mat-card>
-      <mat-card-header>
-        <mat-card-title>Register</mat-card-title>
-      </mat-card-header>
-  
-      <div form [formGroup]="dataForm" (ngSubmit)="onSubmit()" class="form-container">
-        <mat-card-content>
-          <mat-form-field>
-            <mat-label>First Name</mat-label>
-            <input matInput type="text" formControlName="firstName" [(ngModel)]="userModel.firstName">
-          </mat-form-field>
-        
-          <mat-form-field>
-            <mat-label>Last Name</mat-label>
-            <input matInput type="text" formControlName="lastName" [(ngModel)]="userModel.lastName">
-          </mat-form-field>
-        
-          <mat-form-field>
-            <mat-label>Email</mat-label>
-            <input type="email" matInput formControlName="email" [(ngModel)]="userModel.email">
-          </mat-form-field>
-         
-          <mat-form-field>
-            <mat-label>Phone Number</mat-label>
-            <input matInput maxlength="10" type="text" formControlName="phoneNumber" [(ngModel)]="userModel.phoneNumber">
-          </mat-form-field>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Register</mat-card-title>
+    </mat-card-header>
 
-          <!-- <mat-form-field>
-            <mat-label>Image</mat-label>
-            <input matInput type="text" formControlName="image" [(ngModel)]="userModel.image">
-          </mat-form-field> -->
+    <div form [formGroup]="dataForm" (ngSubmit)="onSubmit()" class="form-container">
+      <mat-card-content>
+        <mat-form-field>
+          <mat-label>First Name</mat-label>
+          <input matInput type="text" formControlName="firstName" [(ngModel)]="userModel.firstName">
+        </mat-form-field>
 
-          <div>
-            <div>Image</div>
-            <input type="file" formControlName="image" [(ngModel)]="userModel.image">
-          </div>
+        <mat-form-field>
+          <mat-label>Last Name</mat-label>
+          <input matInput type="text" formControlName="lastName" [(ngModel)]="userModel.lastName">
+        </mat-form-field>
 
-        </mat-card-content>
-  
-        <button mat-stroked-button color="accent" class="btn-block" type="submit" (click)="onSubmit()">Register</button>
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input type="email" matInput formControlName="email" [(ngModel)]="userModel.email">
+        </mat-form-field>
 
-      </div>
-    </mat-card>
-  </div>
+        <mat-form-field>
+          <mat-label>Phone Number</mat-label>
+          <input matInput maxlength="10" type="text" formControlName="phoneNumber" [(ngModel)]="userModel.phoneNumber">
+        </mat-form-field>
+
+        <div>
+          <div>Image</div>
+          <input type="file" formControlName="image" [(ngModel)]="userModel.image">
+        </div>
+
+      </mat-card-content>
+
+      <button mat-stroked-button color="accent" class="btn-block" type="submit" (click)="onSubmit()">Register</button>
+
+    </div>
+  </mat-card>
+</div>

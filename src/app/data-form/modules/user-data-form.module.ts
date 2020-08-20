@@ -5,8 +5,6 @@ import { MaterialModule } from 'src/app/material/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { UserDataFormService } from '../services/user-data-form.service';
 
-
-
 @NgModule({
   declarations: [
     UserDataFormComponent
@@ -23,4 +21,5 @@ import { UserDataFormService } from '../services/user-data-form.service';
     UserDataFormService
   ]
 })
+
 export class UserDataFormModule { }

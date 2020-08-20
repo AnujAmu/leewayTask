@@ -4,4 +4,4 @@ export class User {
     email: string;
     phoneNumber: number;
     image: string;
- }
+}

@@ -6,7 +6,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatButtonModule } from '@angular/material/button';
-import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from '@angular/material/chips';
@@ -37,7 +37,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 const material = [
   FlexLayoutModule,
 
-  FormsModule, 
+  FormsModule,
   ReactiveFormsModule,
 
   MatAutocompleteModule,
