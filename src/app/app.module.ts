@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserDataFormModule } from './data-form/modules/user-data-form.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { UserDataFormModule } from './data-form/modules/user-data-form.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UserDataFormModule
+    UserDataFormModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
