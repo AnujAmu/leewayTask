@@ -46,9 +46,12 @@ export class UserDataFormComponent implements OnInit {
         response => {
           console.log(response);
           this.submitted = true;
+          alert('Data Submitted');
+          this.dataForm.reset();
         },
         error => {
           console.log(error);
+          alert('Data not submitted');
         });
   }
 }
