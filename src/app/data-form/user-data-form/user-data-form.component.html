@@ -1,7 +1,7 @@
-<div class="login-container" fxLayout="row" fxLayoutAlign="center center">
+<div class="parent-container" fxLayout="row" fxLayoutAlign="center center">
   <mat-card>
     <mat-card-header>
-      <mat-card-title>Register</mat-card-title>
+      <mat-card-title>Application</mat-card-title>
     </mat-card-header>
 
     <div form [formGroup]="dataForm" (ngSubmit)="onSubmit()" class="form-container">
@@ -27,13 +27,13 @@
         </mat-form-field>
 
         <div>
-          <div>Image</div>
+          <div>Upload Image</div>
           <input type="file" formControlName="image" [(ngModel)]="userModel.image">
         </div>
 
       </mat-card-content>
 
-      <button mat-stroked-button color="accent" class="btn-block" type="submit" (click)="onSubmit()">Register</button>
+      <button mat-stroked-button color="accent" type="submit" (click)="onSubmit()">Register</button>
 
     </div>
   </mat-card>

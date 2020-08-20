@@ -1,6 +1,6 @@
-.login-container {
+.parent-container {
     height: 100%;
-    background-image: url(https://wallpaperaccess.com/full/624111.jpg);
+    background-color: lightseagreen;
     background-size: cover;
 
     .mat-card {
@@ -36,11 +36,6 @@
 
             .mat-error {
                 font-size: 12px;
-            }
-
-            .mat-flat-button {
-                width: 35%;
-                line-height: 45px;
             }
 
             .mat-stroked-button {
